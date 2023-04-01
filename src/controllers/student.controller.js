@@ -4,7 +4,7 @@ import Student from "../models/student.model.js";
 const CREATE_STUDENT = async (req,res) => {
   const { fName, lName, programme, residence } = req.body;
 
-  if (!fName || !lName || !programme || !residence) {
+  if (!fName && !lName && !programme && !residence) {
     res.status(500).json({
       err: "make sure all fields are correct",
     });

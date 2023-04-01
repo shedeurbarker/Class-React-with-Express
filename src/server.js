@@ -2,7 +2,7 @@
 import express from "express";
 const app = express();
 import DBCONNECT from "./config/dbconnection.js";
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 import studentRoutes from "./routes/student.js"
 
 //use express json

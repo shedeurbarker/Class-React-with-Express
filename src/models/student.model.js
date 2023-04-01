@@ -19,4 +19,4 @@ const studentSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model("Studnet", studentSchema);
+export default mongoose.model("Student", studentSchema);
